@@ -1,0 +1,180 @@
+#getting-started, #docs, #edit, #published, #logs {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#play {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.rank{
+    position: absolute;
+    right:0;
+    top:0;
+    margin-top:50px;
+    margin-right:30px;
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.list-item{
+    position: relative;
+}
+
+#tranque-replay {
+    width:100%;
+    background-color:#002b36;
+}
+#play {
+    background-color:#002b36;
+}
+#editor {
+    position:absolute;
+    top:50px;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.game-screen {
+    flex: 0 1 100vh;
+}
+
+.editor-screen, .sidepane-screen {
+    height:100vh;
+    overflow:hidden;
+}
+
+.toolbar{
+    height:50px;
+}
+.toolbar ul {
+        list-style-type: none;
+        padding-left:0;
+        font-size:0;
+    }
+
+.toolbar ul>li {
+        display: inline-block;
+        height: 50px;
+        text-align:center;
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height:50px;
+        font-size: 25px;
+        color: white;
+        cursor:pointer;
+        transition: all 0.3s ease;
+        position:relative;
+}
+.toolbar ul>li i {
+            width: 30px;
+        }
+
+.toolbar .label {
+            font-weight:normal;
+            font-size:12px;
+            padding: 0 10px;
+            height:0;
+            overflow:hidden;
+            position:absolute;
+            z-index:1000;
+            background-color:#839496;
+            bottom:0;
+            line-height:30px;
+            text-align:center;
+            min-width:50px;
+            border-radius: 0 0 4px 4px;
+            transition: all ease 0.3s;
+        }
+
+.toolbar:hover .label {
+                height:30px;
+                margin-bottom:-30px;
+            }
+
+.toolbar .selected {
+            background: #073642;
+        }
+    }
+}
+
+.left .label {
+    left:0;
+}
+.right .label {
+    right:0;
+}
+
+.toolbar-editor{
+    background: #586e75;
+}
+
+ .toolbar-editor ul>li:hover{
+    background: #839496;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.right{
+  text-align: right;
+}
+
+/* resizing editor */
+
+#main #handle {
+  position: absolute;
+  left: -4px;
+  top: 50px;
+  bottom: 0;
+  width: 8px;
+  background: rgba(43, 43, 43, 0.30);
+  z-index: 998;
+  cursor: w-resize;
+}
+
+#container{
+  position: relative;
+}
+#left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+}
+#right {
+  position: absolute;
+  top: 0;
+  width:50%;
+  right: 0;
+  bottom: 0;
+}
+@media all and (max-width:900px) {
+    #left, #right {
+        width: auto !important;
+        position:relative;
+        left:0;
+        right:0;
+        bottom:0;
+        top:0;
+    }
+}
+
+.bot-selector{
+  width:100%;
+  background: #839496;
+  padding: 15px;
+  height:50px;
+  line-height:20px;
+}

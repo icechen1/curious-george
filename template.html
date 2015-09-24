@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TechTanks Editing dankdank</title>
+    <meta name='theme-color' content='#073642' />
+    <meta name='viewport' content='width=device-width' />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <!-- Page Content -->
+      <form enctype="multipart/form-data" action="george.cgi" method="post">
+
+        <div class="main-layout-full">
+          <div class="row" id="main">
+            <div class="editor-screen nopadding" id="left">
+              <div class="toolbar toolbar-editor left">
+                <ul>
+                  <li id="open_editor"><i class="fa fa-terminal"></i><div class="label">Edit Code</div></li>
+                  <li id="open_published"><i class="fa fa-file-code-o"></i><div class="label">Ask TA</div></li>
+                  <li id="open_published"><i class="fa fa-file-code-o"></i><div class="label">Download As</div></li>
+                  <li id="open_published"><i class="fa fa-file-code-o"></i><div class="label">View Published Code</div></li>
+                  <li id="open_published"><i class="fa fa-file-code-o"></i><div class="label">View Published Code</div></li>
+                  <li id="open_published"><i class="fa fa-file-code-o"></i><div class="label">View Published Code</div></li>
+                  <li type="submit" name="clear" value="Clear"><div class="label">Clear</div></li>   
+                  <li type="file" name="filename" onchange="this.form.submit()" />
+                  <li type="submit" name="check" value="Ask George" /> 
+                  <li type="submit" name="download" value="Download as" /> 
+                  <li type="text" name="download_file_name" value="untitled"/> <b>.grg</b>
+                </ul>
+              </div>
+              <div name="input_script" value="Input" id="editor">
+                #u X
+
+                #a X
+
+                #q X</div>
+
+              <script src="ace/ace.js" type="text/javascript" charset="utf-8"></script>
+              <script>
+                var editor = ace.edit("editor");
+                editor.setTheme("ace/theme/monokai");
+                editor.getSession().setMode("ace/mode/javascript");
+              </script>
+
+              <div id="published">
+                <div class="container">
+                  <div id="published-content" style="display: none;">
+                    <h1>Published Code</h1>
+                    <b> Feedback: </b> <br>
+                    <b> Ask TA</b> (above file automatically included)<br><br>
+                    UW Username: <input type="text" name="uwid" value=""/><br>
+                    Question:<br>
+                    <textarea name="comments" value="Output" style="width:100%" rows="5"></textarea><br>
+                    <input type="submit" name="bug" value="submit" />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="sidepane-screen nopadding" id="right">
+              <div id="handle"></div>
+              <div class="toolbar toolbar-editor right">
+                <ul>
+                  <li id="open_start"><i class="fa fa-wrench"></i><div class="label">Get Started</div></li>
+                  <li id="open_docs"><i class="fa fa-code"></i><div class="label">Documentation</div></li>
+                  <li id="play-btn"><i class="fa fa-play"></i><div class="label">Run Code</div></li>
+                </ul>
+              </div>
+
+              <div id="play">
+                <div class="spinner"></div>
+                <textarea style="width:100%; height: 100%; color:green; border:dotted; background-color:black" rows="20" 
+                          readonly></textarea>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    </div>
+  <div id="alerts">
+    <div class="notice">Tank was successfully created.</div>
+  </div>
+  </div>
+</body>
+</html>
+
+
+
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../se212.css" />
+  </head>
+  <body>
+
+    <h1 class="title"><font face="fantasy" color="#000060">george</font></h1>
+    <br>
+  </body></html>
